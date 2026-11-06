@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Yimtaka - Projects Hub</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            500: '#f97316',
+                            600: '#ea580c',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            height: 100dvh;
+            overflow: hidden;
+            -webkit-tap-highlight-color: transparent;
+        }
+        @media (min-width: 640px) {
+            .mobile-frame {
+                position: relative !important;
+                max-width: 440px;
+                height: 90vh !important;
+                max-height: 880px !important;
+                border-radius: 40px;
+                box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.4), 0 0 0 12px #1f2937;
+            }
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans flex items-center justify-center p-0 sm:p-4">
+
+    <!-- Container Frame -->
+    <div class="mobile-frame fixed inset-0 sm:relative w-full h-full bg-slate-900 flex flex-col justify-between overflow-hidden text-slate-100 border border-slate-800">
+
+        <!-- Header: Snapped to top -->
+        <header class="bg-slate-800/95 backdrop-blur-md border-b border-slate-700/60 h-16 flex-shrink-0 z-30 px-5 flex items-center justify-between shadow-md">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-brand-600 to-amber-400 flex items-center justify-center text-white shadow-lg shadow-brand-600/30">
+                    <i data-lucide="layers" class="w-5 h-5"></i>
+                </div>
+                <div>
+                    <h1 class="font-bold text-lg tracking-tight leading-none text-white">Yimtaka</h1>
+                    <span class="text-[10px] text-brand-500 font-semibold uppercase tracking-wider">GitHub Projects Hub</span>
+                </div>
+            </div>
+            <a href="https://github.com/yimtakayimtaka" target="_blank" rel="noopener noreferrer" class="p-2.5 rounded-xl bg-slate-700/80 text-slate-200 hover:text-white active:scale-95 transition-all" title="View GitHub Profile">
+                <i data-lucide="github" class="w-5 h-5"></i>
+            </a>
+        </header>
+
+        <!-- Main Content Area: Independent Scrolling List -->
+        <main class="flex-1 overflow-y-auto no-scrollbar p-4 space-y-3 pb-8">
+            <div class="mb-4">
+                <h2 class="text-xs font-semibold uppercase tracking-wider text-slate-400 px-1">Select a Repository</h2>
+            </div>
+
+            <!-- Repo Card: sqlMaster -->
+            <a href="https://yimtakayimtaka.github.io/sqlMaster/" class="group bg-slate-800/80 hover:bg-slate-800 border border-slate-700/60 hover:border-brand-500/50 rounded-2xl p-4 flex items-center justify-between transition-all duration-200 active:scale-[0.98] shadow-md block">
+                <div class="flex items-center gap-3.5">
+                    <div class="w-11 h-11 rounded-xl bg-blue-500/10 text-blue-400 border border-blue-500/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <i data-lucide="database" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-base text-slate-100 group-hover:text-brand-400 transition-colors">sqlMaster</h3>
+                        <p class="text-xs text-slate-400 font-mono">yimtakayimtaka.github.io/sqlMaster</p>
+                    </div>
+                </div>
+                <i data-lucide="chevron-right" class="w-5 h-5 text-slate-500 group-hover:text-brand-400 group-hover:translate-x-0.5 transition-all"></i>
+            </a>
+
+            <!-- Repo Card: pyMaster -->
+            <a href="https://yimtakayimtaka.github.io/pyMaster/" class="group bg-slate-800/80 hover:bg-slate-800 border border-slate-700/60 hover:border-brand-500/50 rounded-2xl p-4 flex items-center justify-between transition-all duration-200 active:scale-[0.98] shadow-md block">
+                <div class="flex items-center gap-3.5">
+                    <div class="w-11 h-11 rounded-xl bg-amber-500/10 text-amber-400 border border-amber-500/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <i data-lucide="code-2" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-base text-slate-100 group-hover:text-brand-400 transition-colors">pyMaster</h3>
+                        <p class="text-xs text-slate-400 font-mono">yimtakayimtaka.github.io/pyMaster</p>
+                    </div>
+                </div>
+                <i data-lucide="chevron-right" class="w-5 h-5 text-slate-500 group-hover:text-brand-400 group-hover:translate-x-0.5 transition-all"></i>
+            </a>
+
+            <!-- Repo Card: POS -->
+            <a href="https://yimtakayimtaka.github.io/POS/" class="group bg-slate-800/80 hover:bg-slate-800 border border-slate-700/60 hover:border-brand-500/50 rounded-2xl p-4 flex items-center justify-between transition-all duration-200 active:scale-[0.98] shadow-md block">
+                <div class="flex items-center gap-3.5">
+                    <div class="w-11 h-11 rounded-xl bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <i data-lucide="receipt" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-base text-slate-100 group-hover:text-brand-400 transition-colors">POS</h3>
+                        <p class="text-xs text-slate-400 font-mono">yimtakayimtaka.github.io/POS</p>
+                    </div>
+                </div>
+                <i data-lucide="chevron-right" class="w-5 h-5 text-slate-500 group-hover:text-brand-400 group-hover:translate-x-0.5 transition-all"></i>
+            </a>
+
+            <!-- Repo Card: Learn -->
+            <a href="https://yimtakayimtaka.github.io/Learn/" class="group bg-slate-800/80 hover:bg-slate-800 border border-slate-700/60 hover:border-brand-500/50 rounded-2xl p-4 flex items-center justify-between transition-all duration-200 active:scale-[0.98] shadow-md block">
+                <div class="flex items-center gap-3.5">
+                    <div class="w-11 h-11 rounded-xl bg-purple-500/10 text-purple-400 border border-purple-500/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <i data-lucide="book-open" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-base text-slate-100 group-hover:text-brand-400 transition-colors">Learn</h3>
+                        <p class="text-xs text-slate-400 font-mono">yimtakayimtaka.github.io/Learn</p>
+                    </div>
+                </div>
+                <i data-lucide="chevron-right" class="w-5 h-5 text-slate-500 group-hover:text-brand-400 group-hover:translate-x-0.5 transition-all"></i>
+            </a>
+
+            <!-- Repo Card: Food -->
+            <a href="https://yimtakayimtaka.github.io/Food/" class="group bg-slate-800/80 hover:bg-slate-800 border border-slate-700/60 hover:border-brand-500/50 rounded-2xl p-4 flex items-center justify-between transition-all duration-200 active:scale-[0.98] shadow-md block">
+                <div class="flex items-center gap-3.5">
+                    <div class="w-11 h-11 rounded-xl bg-rose-500/10 text-rose-400 border border-rose-500/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <i data-lucide="utensils" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-base text-slate-100 group-hover:text-brand-400 transition-colors">Food</h3>
+                        <p class="text-xs text-slate-400 font-mono">yimtakayimtaka.github.io/Food</p>
+                    </div>
+                </div>
+                <i data-lucide="chevron-right" class="w-5 h-5 text-slate-500 group-hover:text-brand-400 group-hover:translate-x-0.5 transition-all"></i>
+            </a>
+
+            <!-- Repo Card: Cook -->
+            <a href="https://yimtakayimtaka.github.io/Cook/" class="group bg-slate-800/80 hover:bg-slate-800 border border-slate-700/60 hover:border-brand-500/50 rounded-2xl p-4 flex items-center justify-between transition-all duration-200 active:scale-[0.98] shadow-md block">
+                <div class="flex items-center gap-3.5">
+                    <div class="w-11 h-11 rounded-xl bg-brand-500/10 text-brand-400 border border-brand-500/20 flex items-center justify-center group-hover:scale-110 transition-transform">
+                        <i data-lucide="chef-hat" class="w-5 h-5"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-base text-slate-100 group-hover:text-brand-400 transition-colors">Cook</h3>
+                        <p class="text-xs text-slate-400 font-mono">yimtakayimtaka.github.io/Cook</p>
+                    </div>
+                </div>
+                <i data-lucide="chevron-right" class="w-5 h-5 text-slate-500 group-hover:text-brand-400 group-hover:translate-x-0.5 transition-all"></i>
+            </a>
+        </main>
+
+        <!-- Footer / Mobile Safe Area -->
+        <footer class="flex-shrink-0 h-10 pb-[env(safe-area-inset-bottom)] bg-slate-800/95 border-t border-slate-700/60 px-4 flex items-center justify-center text-[11px] text-slate-400 font-medium">
+            <span>© Yimtaka • GitHub Pages</span>
+        </footer>
+
+    </div>
+
+    <script>
+        // Render Lucide Icons
+        window.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+        });
+    </script>
+</body>
+</html>
